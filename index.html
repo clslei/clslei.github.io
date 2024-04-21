@@ -1,0 +1,73 @@
+<!-- Created by vaibhav -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+/* dabba means a box and dabba hai ye means this is a box */
+#DabbaHaiYe {
+display: none;
+text-align: center;
+position: absolute;
+margin: 18px 0 0 0;
+transition: 1s ease-in-out;
+}
+#DabbaHaiYe p {
+list-style: none;
+margin: 0 0 10px 0;
+padding: 12px 2px;
+width: 100%;
+height: 100%;
+box-shadow: -2px 2px 2px rgba(0,0,0,.5);
+border-radius: 15px 5px 15px 5px;
+}
+#DabbaHaiYe p:hover {
+z-index:3;
+box-shadow: -10px 10px 10px rgba(0,0,0,.5);
+}
+/* used as for getting  */
+.YaHabibib {
+box-shadow: -2px 2px 2px rgba(0,0,0,.5);
+border-radius: 25px 5px 25px 5px;
+width: 30vw;
+height: 6vh;
+border: none;
+outline: none;
+/* cursor: pointer; */
+background: #fff;
+color: #8a0a8a;
+text-transform: uppercase;
+font-weight: bold;
+}
+.YaHabibib:hover {
+z-index:3;
+color:#fff;
+background: #8a0a8a;
+transform: translate(0px,-7px);
+box-shadow: -10px 10px 10px rgba(0,0,0,.5);
+}
+</style>
+<h1>if you want to see secret then click below button!</h1>
+<button class="YaHabibib" onclick="YaHabibib()">Reveal</button>
+<div id="DabbaHaiYe">
+<p> I know you're not doing okay these days and that's totally fine! I don't know the details but it seems like you're not taking care of yourself anymore. Walang mali sayo. It's not your fault. 'Importante ka. You are loved. You should eat, sleep, and take care of yourself! It's okay to cry. And if you need a shoulder to cry on, always remember that we are here for you.<3 </p>
+</div>
+<script>
+function YaHabibib() {
+  var x = document.getElementById("DabbaHaiYe");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+</script>
+
+</body>
+</html>
